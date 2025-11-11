@@ -3,7 +3,7 @@ import { useUserStore } from '../stores/useUserStore'
 import { Link, useNavigate } from 'react-router-dom'
 import {Loader} from 'lucide-react'
 
-const login = () => {
+const Login = () => {
  const{login , loading , user} = useUserStore()
   const[val,setval] =useState({})
    const navigate = useNavigate(); 
@@ -80,4 +80,4 @@ setval({...val,[e.target.name] : e.target.value });
   )
 }
 
-export default login
+export default Login

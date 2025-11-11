@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useUserStore } from "../stores/useUserStore";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const { loading, signup } = useUserStore();
@@ -77,12 +78,15 @@ const Signup = () => {
           </button>
         </div>
 
-        <h5 className="text-sm mt-3 text-gray-500 text-center">
+<Link to='/'>
+<h5 className="text-sm mt-3 text-gray-500 text-center">
           Already have an account?{" "}
           <span className="text-blue-600 cursor-pointer hover:underline">
             Login
           </span>
         </h5>
+</Link>
+        
       </div>
     </div>
   );

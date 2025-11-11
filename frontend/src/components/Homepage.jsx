@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../pages/Navbar'
 import Hero from '../pages/Hero'
 import CategoriesHome from '../pages/CategoriesHome'
-import Login from '../pages/login'
+import Login from '../pages/Login'
 import Signup from '../pages/Signup'
 import AddTask from '../pages/AddTask'
 const Homepage = () => {

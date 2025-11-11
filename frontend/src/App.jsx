@@ -4,7 +4,7 @@ import './App.css'
 import Homepage from './components/Homepage';
 import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import Signup from './pages/Signup';
-import Login from './pages/login'
+import Login from './pages/Login'
 import Navbar from './pages/Navbar';
 import { useUserStore } from './stores/useUserStore';
 import Hero from './pages/Hero';
