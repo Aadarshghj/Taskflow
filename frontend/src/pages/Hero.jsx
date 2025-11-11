@@ -32,8 +32,16 @@ deletetask({id})
  const completeHandler = (id) =>{
 isCompleted({id})
   }
+
+ 
   return (
     <div className='w-screen min-h-screen  flex  md:items-start md:p-7 items-start justify-center bg-gray-100 '>
+
+    { task.length === 0 ? ( <div className="flex flex-col items-center text-gray-500 mt-10">
+        
+        <p className="mt-4 text-lg font-medium">No tasks yet!</p>
+        <p className="text-sm text-gray-400">Add your first task to get started 🚀</p>
+      </div>):
       <div className="grid grid-cols-1 p-3 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-6 md:gap-8 w-full max-w-7xl">
         {
           tasks.map((t, i) => {
@@ -90,7 +98,7 @@ isCompleted({id})
         }
 
       </div>
-
+}
     </div>
   )
 }
